@@ -1,0 +1,25 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Q7 Scenario A Star Schema" id="q7adiagram">
+    <mxGraphModel dx="900" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="900" pageHeight="700" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="dim_customer" value="&lt;b&gt;dim_customer&lt;/b&gt;&lt;br&gt;PK customer_key&lt;br&gt;customer_id&lt;br&gt;customer_no&lt;br&gt;first_name&lt;br&gt;last_name&lt;br&gt;full_name&lt;br&gt;email&lt;br&gt;date_of_birth&lt;br&gt;gender&lt;br&gt;age_group&lt;br&gt;registration_date&lt;br&gt;customer_status&lt;br&gt;city_name&lt;br&gt;country_name&lt;br&gt;current_plan_name&lt;br&gt;current_plan_fee&lt;br&gt;effective_date&lt;br&gt;expiry_date&lt;br&gt;is_current" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;align=left;verticalAlign=top;spacingLeft=8;spacingTop=8" vertex="1" parent="1">
+          <mxGeometry x="320" y="40" width="230" height="400" as="geometry" />
+        </mxCell>
+        <mxCell id="fact_customer_daily_activity" value="&lt;b&gt;fact_customer_daily_activity&lt;/b&gt;&lt;br&gt;PK,FK customer_key&lt;br&gt;PK,FK date_key&lt;br&gt;streaming_session_count&lt;br&gt;total_streaming_duration_min&lt;br&gt;physical_rental_count&lt;br&gt;returned_item_count&lt;br&gt;total_amount_spent&lt;br&gt;support_ticket_count&lt;br&gt;wishlist_addition_count&lt;br&gt;review_count&lt;br&gt;avg_completion_percentage" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;align=left;verticalAlign=top;spacingLeft=8;spacingTop=8" vertex="1" parent="1">
+          <mxGeometry x="285" y="480" width="300" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="dim_date" value="&lt;b&gt;dim_date&lt;/b&gt;&lt;br&gt;PK date_key&lt;br&gt;full_date&lt;br&gt;day_of_week&lt;br&gt;day_name&lt;br&gt;day_of_month&lt;br&gt;week_of_year&lt;br&gt;month_number&lt;br&gt;month_name&lt;br&gt;quarter&lt;br&gt;year&lt;br&gt;is_weekend&lt;br&gt;is_holiday" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;align=left;verticalAlign=top;spacingLeft=8;spacingTop=8" vertex="1" parent="1">
+          <mxGeometry x="15" y="475" width="230" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_customer_fact" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#666666;strokeWidth=1.5;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="dim_customer" target="fact_customer_daily_activity">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_date_fact" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#666666;strokeWidth=1.5;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="dim_date" target="fact_customer_daily_activity">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

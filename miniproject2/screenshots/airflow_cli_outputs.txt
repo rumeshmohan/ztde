@@ -1,0 +1,56 @@
+=== DAG task list (no import errors) ===
+No data found
+
+bronze_load_complete
+data_quality_validation.check_fact_dim_consistency
+data_validation.check_duplicates
+data_validation.check_mandatory_fields
+data_validation.check_referential_integrity
+data_validation.check_valid_dates
+data_validation.check_valid_monetary
+data_validation.check_valid_statuses
+data_validation.quarantine_bad_rows
+extract.extract_content
+extract.extract_customer
+extract.extract_events
+extract.extract_inventory
+extract.extract_reference
+finish
+gold_load.load_fact_content_monthly
+gold_load.load_fact_customer_daily
+gold_load.load_fact_inventory_util
+log_audit_end
+log_audit_start
+scd_processing.load_dim_content
+scd_processing.load_dim_customer
+scd_processing.load_dim_inventory
+scd_processing.load_dim_reference
+silver_transformation.transform_content
+silver_transformation.transform_customer
+silver_transformation.transform_events
+silver_transformation.transform_inventory
+silver_transformation.transform_reference
+start
+
+=== Overall run summary (scheduled catchup + explicit backfill) ===
+ run_type  |  state  | count |          min           |          max           
+-----------+---------+-------+------------------------+------------------------
+ scheduled | success |   177 | 2026-01-01 00:00:00+00 | 2026-06-27 00:00:00+00
+ backfill  | success |     1 | 2026-01-15 00:00:00+00 | 2026-01-15 00:00:00+00
+(2 rows)
+
+
+=== Retry demonstration: scd_processing.load_dim_content, scheduled__2026-06-18 ===
+             task_id             |  state  | try_number |          start_date           |           end_date            
+---------------------------------+---------+------------+-------------------------------+-------------------------------
+ scd_processing.load_dim_content | success |          3 | 2026-09-12 18:58:10.677025+00 | 2026-09-12 18:58:11.734809+00
+(1 row)
+
+
+=== Backfill demonstration: 2026-01-15 (original run + explicit backfill) ===
+                run_id                | run_type  |  state  |      logical_date      
+--------------------------------------+-----------+---------+------------------------
+ scheduled__2026-01-16T00:00:00+00:00 | backfill  | success | 2026-01-15 00:00:00+00
+ scheduled__2026-01-15T00:00:00+00:00 | scheduled | success | 2026-01-14 00:00:00+00
+(2 rows)
+

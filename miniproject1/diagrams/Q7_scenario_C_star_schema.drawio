@@ -1,0 +1,31 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Q7 Scenario C Star Schema" id="q7cdiagram">
+    <mxGraphModel dx="1000" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1000" pageHeight="800" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="dim_warehouse" value="&lt;b&gt;dim_warehouse&lt;/b&gt;&lt;br&gt;PK warehouse_key&lt;br&gt;warehouse_id&lt;br&gt;warehouse_name&lt;br&gt;city_name&lt;br&gt;country_name" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;align=left;verticalAlign=top;spacingLeft=8;spacingTop=8" vertex="1" parent="1">
+          <mxGeometry x="430" y="40" width="200" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="dim_inventory_item" value="&lt;b&gt;dim_inventory_item&lt;/b&gt;&lt;br&gt;PK inventory_key&lt;br&gt;inventory_id&lt;br&gt;content_id&lt;br&gt;content_title&lt;br&gt;content_type&lt;br&gt;barcode&lt;br&gt;warehouse_name&lt;br&gt;city_name&lt;br&gt;purchase_date&lt;br&gt;item_condition&lt;br&gt;item_status&lt;br&gt;effective_date&lt;br&gt;expiry_date&lt;br&gt;is_current" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;align=left;verticalAlign=top;spacingLeft=8;spacingTop=8" vertex="1" parent="1">
+          <mxGeometry x="60" y="280" width="230" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="fact_inventory_utilisation" value="&lt;b&gt;fact_inventory_utilisation&lt;/b&gt;&lt;br&gt;PK,FK inventory_key&lt;br&gt;PK,FK date_key&lt;br&gt;FK warehouse_key&lt;br&gt;rental_count&lt;br&gt;return_count&lt;br&gt;is_available&lt;br&gt;is_rented_out&lt;br&gt;days_available&lt;br&gt;cumulative_days_rented&lt;br&gt;cumulative_total_days&lt;br&gt;utilisation_percentage" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;align=left;verticalAlign=top;spacingLeft=8;spacingTop=8" vertex="1" parent="1">
+          <mxGeometry x="380" y="300" width="300" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="dim_date" value="&lt;b&gt;dim_date&lt;/b&gt;&lt;br&gt;PK date_key&lt;br&gt;full_date&lt;br&gt;day_name&lt;br&gt;month_name&lt;br&gt;quarter&lt;br&gt;year" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;align=left;verticalAlign=top;spacingLeft=8;spacingTop=8" vertex="1" parent="1">
+          <mxGeometry x="430" y="580" width="200" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_inv_fact" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#666666;strokeWidth=1.5;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="dim_inventory_item" target="fact_inventory_utilisation">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_wh_fact" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#666666;strokeWidth=1.5;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="dim_warehouse" target="fact_inventory_utilisation">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_date_fact" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#666666;strokeWidth=1.5;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="dim_date" target="fact_inventory_utilisation">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

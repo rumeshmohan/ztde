@@ -1,0 +1,21 @@
+# The course repository lives next to these projects and is not part of this repo
+dw-fundamentals-bootcamp/
+
+# Personal course submission form (contains contact details)
+ZuuCrew-Project-Submission-Form.docx
+
+# Secrets and local environments
+.env
+.venv/
+venv/
+
+# Runtime output and caches
+logs/
+__pycache__/
+*.pyc
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
