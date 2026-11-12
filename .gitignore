@@ -1,8 +1,10 @@
-# Course repositories (cloned from Zuu Crew)
-course-repos/
-
-# Zipped course submissions
-submissions/
+# Track only the bootcamp folders (plus this file and the README).
+# Everything else at the top level (course-repos/, submissions/, ...) stays local.
+/*
+!/.gitignore
+!/README.md
+!/bootcamp-01-dw-fundamentals/
+!/bootcamp-02-big-data-pipelines/
 
 # Course handouts kept beside my notes (the originals live in course-repos/)
 bootcamp-02-big-data-pipelines/**/*.pdf
