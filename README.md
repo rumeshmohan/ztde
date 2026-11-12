@@ -7,7 +7,6 @@ My work from the Zuu Crew "Zero to Data Engineer" programme.
 ```
 ztde/
 ├── bootcamp-01-dw-fundamentals/     Bootcamp 01: Data Warehousing Fundamentals projects
-├── bootcamp-02-big-data-pipelines/  Bootcamp 02: Big Data Pipelines, weekly lab notes
 ├── course-repos/                    Zuu Crew course repositories (cloned locally, not in this repo)
 └── submissions/                     Zipped submissions sent to the course (local only, not in this repo)
 ```
@@ -22,12 +21,6 @@ ztde/
 
 Each folder has its own README (structure, versions, setup, how to run) and a written report
 in its `report/` folder.
-
-## Bootcamp 02: Big Data Pipelines
-
-Labs run on Cloudera QuickStart (CDH 5.7) in local Docker.
-[`week01/cloudera-daily-start.txt`](bootcamp-02-big-data-pipelines/week01/cloudera-daily-start.txt)
-has the start, stop and troubleshooting steps.
 
 ## What is not in this repo
 

@@ -4,10 +4,6 @@
 !/.gitignore
 !/README.md
 !/bootcamp-01-dw-fundamentals/
-!/bootcamp-02-big-data-pipelines/
-
-# Course handouts kept beside my notes (the originals live in course-repos/)
-bootcamp-02-big-data-pipelines/**/*.pdf
 
 # Personal course submission form
 ZuuCrew-Project-Submission-Form.docx
