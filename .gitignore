@@ -6,9 +6,8 @@
 !/bootcamp-*/
 !/submissions/
 
-# Bootcamp 02: only the folder itself is tracked, its contents stay local
+# Bootcamp 02: kept local for now
 /bootcamp-02-big-data-pipelines/*
-!/bootcamp-02-big-data-pipelines/.gitkeep
 
 # Submissions: one folder per bootcamp holding the submitted zips
 /submissions/*

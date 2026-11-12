@@ -7,7 +7,6 @@ My work from the Zuu Crew "Zero to Data Engineer" programme.
 ```
 ztde/
 ├── bootcamp-01-dw-fundamentals/     Bootcamp 01: Data Warehousing Fundamentals projects
-├── bootcamp-02-big-data-pipelines/  Bootcamp 02: Big Data Pipelines (placeholder for now)
 ├── course-repos/                    Zuu Crew course repositories (cloned locally, not in this repo)
 └── submissions/                     One folder per bootcamp with the zips submitted to the course
 ```
