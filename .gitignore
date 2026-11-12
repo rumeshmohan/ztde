@@ -1,5 +1,11 @@
-# The course repository 
-dw-fundamentals-bootcamp/
+# Course repositories (cloned from Zuu Crew)
+course-repos/
+
+# Zipped course submissions
+submissions/
+
+# Course handouts kept beside my notes (the originals live in course-repos/)
+bootcamp-02-big-data-pipelines/**/*.pdf
 
 # Personal course submission form
 ZuuCrew-Project-Submission-Form.docx

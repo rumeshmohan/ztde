@@ -23,7 +23,7 @@ truth across all three sources) is **not duplicated into this project**. It is
 provided separately in the bootcamp course repository:
 
 ```
-../dw-fundamentals-bootcamp/Z2D DWDF Capstone Project/DE01Capstone/
+../../course-repos/dw-fundamentals-bootcamp/Z2D DWDF Capstone Project/DE01Capstone/
 ├── data/           11 raw CSVs (impressions, clicks, conversions, ...)
 ├── ddl/            pulsetrack_source_schema.sql — RAW source schema (Bronze)
 ├── mongo/          advertiser_accounts.jsonl, partner_profiles.jsonl
@@ -38,7 +38,7 @@ they're material provided by the course, not a deliverable.
 ### Project Structure
 
 ```
-capstone project/
+capstone-project/
 ├── README.md                                  # This file
 ├── report/
 │   └── pulsetrack_capstone_report.md          # THE report — one continuous solution, Q1-Q10

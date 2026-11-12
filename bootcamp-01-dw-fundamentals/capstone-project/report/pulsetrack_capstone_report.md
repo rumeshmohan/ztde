@@ -9,7 +9,7 @@
 > unrelated solution. Source data, DDL, MongoDB collections and the Kafka-style
 > stream referenced throughout are the official PulseTrack dataset, provided
 > separately in the bootcamp repository under
-> `dw-fundamentals-bootcamp/Z2D DWDF Capstone Project/DE01Capstone/` (see
+> `course-repos/dw-fundamentals-bootcamp/Z2D DWDF Capstone Project/DE01Capstone/` (see
 > [`../README.md`](../README.md) for the exact path on this machine) — not
 > duplicated into this project directory.
 

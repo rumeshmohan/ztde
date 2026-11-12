@@ -14,7 +14,7 @@ import os
 # two project folders are ever moved to a different relative layout.
 _HERE = os.path.dirname(os.path.abspath(__file__))
 SOURCE_DATA_ROOT = os.path.normpath(
-    os.path.join(_HERE, "..", "..", "dw-fundamentals-bootcamp",
+    os.path.join(_HERE, "..", "..", "..", "course-repos", "dw-fundamentals-bootcamp",
                  "Z2D DWDF Capstone Project", "DE01Capstone")
 )
 MONGO_ADVERTISER_ACCOUNTS_PATH = os.path.join(SOURCE_DATA_ROOT, "mongo", "advertiser_accounts.jsonl")
