@@ -10,11 +10,9 @@
 /bootcamp-02-big-data-pipelines/*
 !/bootcamp-02-big-data-pipelines/.gitkeep
 
-# Submissions: only the per-bootcamp folders are tracked, the zips stay local
+# Submissions: one folder per bootcamp holding the submitted zips
 /submissions/*
 !/submissions/*/
-/submissions/*/*
-!/submissions/*/.gitkeep
 
 # Personal course submission form
 ZuuCrew-Project-Submission-Form.docx
