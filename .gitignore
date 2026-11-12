@@ -1,14 +1,20 @@
-# Track only the bootcamp folders (plus this file and the README).
-# Everything else at the top level (course-repos/, submissions/, ...) stays local.
+# Track only the bootcamp folders, submissions/, this file and the README.
+# Everything else at the top level (course-repos/, ...) stays local.
 /*
 !/.gitignore
 !/README.md
-!/bootcamp-01-dw-fundamentals/
-!/bootcamp-02-big-data-pipelines/
+!/bootcamp-*/
+!/submissions/
 
 # Bootcamp 02: only the folder itself is tracked, its contents stay local
 /bootcamp-02-big-data-pipelines/*
 !/bootcamp-02-big-data-pipelines/.gitkeep
+
+# Submissions: only the per-bootcamp folders are tracked, the zips stay local
+/submissions/*
+!/submissions/*/
+/submissions/*/*
+!/submissions/*/.gitkeep
 
 # Personal course submission form
 ZuuCrew-Project-Submission-Form.docx

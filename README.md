@@ -7,8 +7,9 @@ My work from the Zuu Crew "Zero to Data Engineer" programme.
 ```
 ztde/
 ├── bootcamp-01-dw-fundamentals/     Bootcamp 01: Data Warehousing Fundamentals projects
+├── bootcamp-02-big-data-pipelines/  Bootcamp 02: Big Data Pipelines (placeholder for now)
 ├── course-repos/                    Zuu Crew course repositories (cloned locally, not in this repo)
-└── submissions/                     Zipped submissions sent to the course (local only, not in this repo)
+└── submissions/                     One folder per bootcamp; the submitted zips stay local
 ```
 
 ## Bootcamp 01: Data Warehousing Fundamentals
@@ -31,5 +32,5 @@ in its `report/` folder.
 - **Credentials.** None are stored. Passwords are read from environment variables or are
   placeholders you replace (see `bootcamp-01-dw-fundamentals/capstone-project/README.md` and
   `bootcamp-01-dw-fundamentals/miniproject2/.env.example`).
-- **Submissions** under `submissions/`.
+- **Submission zips.** Each bootcamp has a folder under `submissions/`, but the zips inside stay local.
 - **Local environments and run output** (virtual environments, Airflow logs, caches).
